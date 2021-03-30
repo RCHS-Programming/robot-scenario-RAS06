@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Robot here.
+ * Main character. Grabs pizza and goes home. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Riz 
+ * @version Intro
  */
 public class Robot extends Actor
 {
@@ -14,6 +14,44 @@ public class Robot extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        robotMovement();
+        detectWallCollision();
+        detectBlockCollision();
     }    
+        //Moves the Robot. 
+    public void robotMovement() 
+    {
+        if (Greenfoot.isKeyDown("up")) 
+        {
+            setLocation(getX(), getY() - 3);
+        }
+        if (Greenfoot.isKeyDown("down")) 
+        {
+            setLocation(getX(), getY() + 3); 
+        }
+        if (Greenfoot.isKeyDown("left")) 
+        {
+            setLocation(getX() - 3, getY());
+        }
+        if (Greenfoot.isKeyDown("right")) 
+        {
+            setLocation(getX() + 3, getY());
+        }
+    }
+        //Checks wall collision. 
+    public void detectWallCollision ()
+    {
+        if(isTouching(Wall.class))
+        {
+            setLocation(50, 50);
+        }
+    }
+        //Checks block collision. 
+    public void detectBlockCollision () 
+    {
+        if(isTouching(Block.class))
+        {
+            setLocation(50, 50);
+        }
+    }
 }
