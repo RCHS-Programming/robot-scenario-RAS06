@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Block here.
+ * Rotating block, only moving structure.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Riz 
+ * @version Intro
  */
 public class Block extends Actor
 {
@@ -16,7 +16,7 @@ public class Block extends Actor
     {
         turnBlock();
     }    
-    
+        //Rotates the structure. 
     public void turnBlock ()
     {
         turn(2);

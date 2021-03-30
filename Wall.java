@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Wall here.
+ * Strucutre that prevents evasion of Block.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Riz 
+ * @version Intro.
  */
 public class Wall extends Actor
 {

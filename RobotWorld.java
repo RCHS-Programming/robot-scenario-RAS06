@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class RobotWorld here.
+ * Land of pizza, rotating blocks, and houses in the middle of nowhere.
  * 
  * @author Riz 
- * @version (a version number or a date)
+ * @version (Intro)
  */
 public class RobotWorld extends World
 {

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Scorepanel here.
+ * Exists to display data. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Riz 
+ * @version Intro
  */
 public class Scorepanel extends Actor
 {
