@@ -30,6 +30,7 @@ public class Robot extends Actor
         detectWallCollision();
         detectBlockCollision();
         showStatus();
+        goAheadAndTry();
     }    
         //Moves the Robot. 
     public void robotMovement() 
@@ -134,5 +135,19 @@ public class Robot extends Actor
     {
         getWorld().showText("Lives: " + lives, 70, 540);
         getWorld().showText("Pizzas: " + pizzaEaten, 70, 560);
+    }
+            //Good Luck Winning lol. 
+    public void goAheadAndTry ()
+    {
+        if(score == 3) 
+        {
+            score++;
+            getWorld().addObject(new Block(), 500, 400);
+        }
+        if(score == 6)
+        {
+            score++;   
+            getWorld().addObject(new Block(), 300, 450);
+        }
     }
 }
